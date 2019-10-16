@@ -1,0 +1,1 @@
+下载得到gif图片，是一道隐写题，通过stegsolve的frame browser功能逐帧查看，得到一个二维码图片，ps用定位符补全二维码，得到flag。
