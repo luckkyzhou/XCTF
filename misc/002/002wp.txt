@@ -1,0 +1,5 @@
+通过winhex打开文件，搜索发现文件内有flag.txt。
+ext3镜像文件，用rstudio数据恢复软件打开，得到flag。
+
+其他方法：
+在linux中mount挂载上镜像，通过find grep命令找到flag.txt，cat一下。
