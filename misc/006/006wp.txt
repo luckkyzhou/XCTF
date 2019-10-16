@@ -1,0 +1,3 @@
+下载得到rar文件，打开提示secret头损坏，内附flag.txt。winhex打开，通过将flag.txt和secret.png压缩可知，在winhex内将7A修改为74。
+解压得到secret.png，用winhex打开发现是gif图片。
+题目提示双图层，ps打开分别保存两张图片，solvesteg打开分析得到两个半张的二维码，合并得flag。
