@@ -1,0 +1,7 @@
+1.
+python pwn脚本，连接远程服务器，进行操作。ls -> cat flag
+
+2.
+直接输入远程连接命令
+nc -nv ip port  
+ls ->cat flag
