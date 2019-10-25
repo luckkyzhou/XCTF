@@ -1,0 +1,5 @@
+checksec一下，64位程序。
+放入IDA，F5一下，main函数很简单，return vulnerable_function函数，查看此函数，里面只有一个return read(0, &buf, 0x200uLL);功能，read联想到栈溢出。
+再发现在vulnerable函数后面紧跟一个callsystem函数，功能是执行/bin/sh。
+那么构造payload，buf的地址是0x80，vulnerable的调用结束地址是-0x08，而callsystem开始的内存地址是0x400596，由此只要在vulnerable函数调用结束时调用callsystem即可。
+payload = 'a' * 0x88 + p64(0x400596)    r.send(payload)
